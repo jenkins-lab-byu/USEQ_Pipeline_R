@@ -32,6 +32,13 @@ Treatment_Samples=X10124,X10526,X10990,X20055,X30266,X30267,X70032,X10007,X10010
 
 
 
+
+
+
+
+
+
+
 ###########
 ## Creating USEQ Directories ##
 ###########
@@ -54,7 +61,7 @@ echo ""
 echo "**** Running R-Script and Creating SGR Files ****"
 echo ""
 
-# Rscript $sgr_script --base_dir $base_dir --control_betas $control_betas --treatment_betas $treatment_betas --illumina_annotation $illumina_annotation --USEQ_Prep $USEQ_Prep
+Rscript $sgr_script --base_dir $base_dir --control_betas $control_betas --treatment_betas $treatment_betas --illumina_annotation $illumina_annotation --USEQ_Prep $USEQ_Prep
 
 ###########
 ## Converting SGR Files to Bar Files ##
